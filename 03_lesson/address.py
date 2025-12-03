@@ -20,3 +20,9 @@ class Address:
 
     def say_apartment(self):
         return self.apartment
+
+    def __str__(self):
+        return (
+            f"{self.index}, {self.sity}, {self.street}, {self.building}, {self.apartment}"
+        )
+
